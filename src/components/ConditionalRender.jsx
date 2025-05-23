@@ -7,7 +7,16 @@ const ConditionalRender = () => {
     let terms = ""
 
     if (showTerms) {
-        terms = <p>Ther's some conditions Which I dno't rember reight noew.</p>
+        terms = <div> <h2>Terms and conditions:</h2>
+            <p>Ther's some conditions Which I dno't rember reight noew.</p>
+            <ul>
+                <li>Term 1</li>
+                <li>Term 2</li>
+                <li>Term 3</li>
+                <li>Term 4</li>
+            </ul>
+        </div>
+
     }
     return (
         <div>
