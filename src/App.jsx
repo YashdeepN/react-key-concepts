@@ -9,6 +9,7 @@ import TwoWayBinding from './components/TwoWayBinding'
 import NewsLetter from './components/NewsLetter'
 import Calculator from './components/Calculator'
 import ConditionalRender from './components/ConditionalRender'
+import BtnOrAnchor from './components/BtnOrAnchor'
 
 function App() {
   const [outputText, setCount] = useState("Initial Text")
@@ -28,6 +29,10 @@ function App() {
       <Calculator /> */}
 
       <ConditionalRender />
+
+      <BtnOrAnchor isBtn={true}>
+        Click
+      </BtnOrAnchor>
     </>
   )
 }

@@ -1,8 +1,9 @@
 import React from 'react'
 
-const BtnOrAnchor = () => {
+const BtnOrAnchor = ({ isBtn, children }) => {
+    const Tag = isBtn ? 'button' : 'a'
     return (
-        <div>BtnOrAnchor</div>
+        <Tag>{children}</Tag>
     )
 }
 
