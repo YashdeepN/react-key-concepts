@@ -8,13 +8,14 @@ import Counter from './components/Counter'
 import TwoWayBinding from './components/TwoWayBinding'
 import NewsLetter from './components/NewsLetter'
 import Calculator from './components/Calculator'
+import ConditionalRender from './components/ConditionalRender'
 
 function App() {
   const [outputText, setCount] = useState("Initial Text")
 
   return (
     <>
-      <BookList />
+      {/* <BookList />
 
       <EmailValidation />
 
@@ -24,7 +25,9 @@ function App() {
 
       <NewsLetter />
 
-      <Calculator />
+      <Calculator /> */}
+
+      <ConditionalRender />
     </>
   )
 }
