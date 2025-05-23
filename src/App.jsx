@@ -7,6 +7,7 @@ import EmailValidation from './components/EmailValidation'
 import Counter from './components/Counter'
 import TwoWayBinding from './components/TwoWayBinding'
 import NewsLetter from './components/NewsLetter'
+import Calculator from './components/Calculator'
 
 function App() {
   const [outputText, setCount] = useState("Initial Text")
@@ -22,6 +23,8 @@ function App() {
       <TwoWayBinding />
 
       <NewsLetter />
+
+      <Calculator />
     </>
   )
 }
