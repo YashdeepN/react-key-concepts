@@ -7,16 +7,14 @@ const ConditionalRender = () => {
     let terms = ""
 
     if (showTerms) {
-        terms = "Ther's some conditions Which I dno't rember reight noew."
+        terms = <p>Ther's some conditions Which I dno't rember reight noew.</p>
     }
     return (
         <div>
             <div>
                 <button onClick={() => setShowTerms((prev) => !prev)}>Show Terms and Conditions</button>
             </div>
-            <div>
-                <p>{terms}</p>
-            </div>
+            {terms}
         </div>
     )
 }
