@@ -1,9 +1,18 @@
 import React from 'react'
 import classes from "./TextBox.module.css"
 
-const TextBox = () => {
+const TextBox = ({ children, mode }) => {
+
+    let cssClasses;
+    if (mode === 'alert') {
+        cssClasses = classes.alert;
+    } else if (mode === 'info') {
+        cssClasses = classes.info;
+    }
     return (
-        <div>TextBox</div>
+        <div>
+            <p className={cssClasses}>{children}</p>
+        </div>
     )
 }
 

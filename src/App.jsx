@@ -12,6 +12,7 @@ import ConditionalRender from './components/ConditionalRender'
 import BtnOrAnchor from './components/BtnOrAnchor'
 import ListOfItems from './components/ListOfItems'
 import ColorParagraph from './components/ColorParagraph'
+import TextBox from './components/moduleStyle/TextBox'
 
 function App() {
   const [outputText, setCount] = useState("Initial Text")
@@ -39,6 +40,9 @@ function App() {
       <ListOfItems />
 
       <ColorParagraph />
+
+      <TextBox mode='alert'>Css Modules can be very useful!</TextBox>
+      <TextBox mode='info'>Css Modules can be very useful!</TextBox>
     </>
   )
 }
