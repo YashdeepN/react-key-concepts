@@ -13,6 +13,7 @@ import BtnOrAnchor from './components/BtnOrAnchor'
 import ListOfItems from './components/ListOfItems'
 import ColorParagraph from './components/ColorParagraph'
 import TextBox from './components/moduleStyle/TextBox'
+import TailwindStyle from './components/TailwindStyle'
 
 function App() {
   const [outputText, setCount] = useState("Initial Text")
@@ -31,7 +32,7 @@ function App() {
 
       <Calculator /> */}
 
-      <ConditionalRender />
+      {/* <ConditionalRender />
 
       <BtnOrAnchor isBtn={true}>
         Click
@@ -42,7 +43,9 @@ function App() {
       <ColorParagraph />
 
       <TextBox mode='alert'>Css Modules can be very useful!</TextBox>
-      <TextBox mode='info'>Css Modules can be very useful!</TextBox>
+      <TextBox mode='info'>Css Modules can be very useful!</TextBox> */}
+
+      <TailwindStyle />
     </>
   )
 }
