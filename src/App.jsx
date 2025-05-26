@@ -11,6 +11,7 @@ import Calculator from './components/Calculator'
 import ConditionalRender from './components/ConditionalRender'
 import BtnOrAnchor from './components/BtnOrAnchor'
 import ListOfItems from './components/ListOfItems'
+import ColorParagraph from './components/ColorParagraph'
 
 function App() {
   const [outputText, setCount] = useState("Initial Text")
@@ -36,6 +37,8 @@ function App() {
       </BtnOrAnchor>
 
       <ListOfItems />
+
+      <ColorParagraph />
     </>
   )
 }
