@@ -1,10 +1,30 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 
-const Preferences = () => {
+const Preferences = forwardRef((props, ref) => {
   const [wantsProdInfo, setWantsProdInfo] = useState(false);
   const [wantsProdUpdate, setWantsProdUpdate] = useState(false);
+
+  function handleChangeProdInfo() {
+    setWantsProdInfo((prev) => !prev);
+  }
+
+  function handleChangeProdUpdate() {
+    setWantsProdUpdate((prev) => !prev);
+  }
+
+  function reset() {
+    setWantsProdInfo(false);
+    setWantsProdUpdate(false);
+  }
+
+  ref.current.reset = reset;
+  ref.current.selectedPreferences = {
+    newProductInfo: wantsProdInfo,
+    productUpdateInfo: wantsProdUpdate,
+  };
+
   return (
-    <div className={classes.preferences}>
+    <div>
       <label>
         <input
           type="checkbox"
@@ -25,6 +45,5 @@ const Preferences = () => {
       </label>
     </div>
   );
-};
-
+});
 export default Preferences;
