@@ -14,6 +14,7 @@ import ListOfItems from './components/ListOfItems'
 import ColorParagraph from './components/ColorParagraph'
 import TextBox from './components/moduleStyle/TextBox'
 import TailwindStyle from './components/TailwindStyle'
+import AddColorForm from './components/AddColorForm'
 
 function App() {
   const [outputText, setCount] = useState("Initial Text")
@@ -46,6 +47,7 @@ function App() {
       <TextBox mode='info'>Css Modules can be very useful!</TextBox> */}
 
       <TailwindStyle />
+      <AddColorForm />
     </>
   )
 }
