@@ -15,6 +15,7 @@ import ColorParagraph from './components/ColorParagraph'
 import TextBox from './components/moduleStyle/TextBox'
 import TailwindStyle from './components/TailwindStyle'
 import AddColorForm from './components/AddColorForm'
+import CounterRefState from './components/CounterRefState'
 
 function App() {
   const [outputText, setCount] = useState("Initial Text")
@@ -48,6 +49,8 @@ function App() {
 
       <TailwindStyle />
       <AddColorForm />
+
+      <CounterRefState />
     </>
   )
 }
