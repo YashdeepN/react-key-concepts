@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./MainNavigation.module.css";
+import SideDrawer from "./SideDrawer";
 
 const MainNavigation = () => {
+  const [showSideDrawer, setShowSideDrawer] = useState(false);
+
   function handleOpenDrawer() {
     console.log("handled");
+    setShowSideDrawer(true);
   }
+
   return (
     <>
       <header className={classes.header}>
@@ -15,6 +20,10 @@ const MainNavigation = () => {
           <div />
         </button>
       </header>
+      {showSideDrawer && (
+        <SideDrawer handleCloseSideDrawer={() => setShowSideDrawer(false)} />
+      )}
+      <div id="my"></div>
     </>
   );
 };

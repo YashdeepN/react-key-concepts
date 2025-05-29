@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./SideDrawer.module.css";
 
-const SideDrawer = () => {
+const SideDrawer = ({ handleCloseSideDrawer }) => {
   return (
     <>
       <div className={classes.backdrop} />
-      <aside className={classes.drawer}>
+      <aside className={classes.drawer} onClick={handleCloseSideDrawer}>
         <nav>
           <ul>
             <li>
