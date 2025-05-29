@@ -17,6 +17,7 @@ import TailwindStyle from "./components/TailwindStyle";
 import AddColorForm from "./components/AddColorForm";
 import CounterRefState from "./components/CounterRefState";
 import PreferencesForm from "./components/RefsInCustomCompo/PreferencesForm";
+import Form from "./components/07Practice/Form";
 
 function App() {
   const [outputText, setCount] = useState("Initial Text");
@@ -48,11 +49,13 @@ function App() {
       <TextBox mode='alert'>Css Modules can be very useful!</TextBox>
       <TextBox mode='info'>Css Modules can be very useful!</TextBox> */}
 
-      <TailwindStyle />
+      {/* <TailwindStyle />
       <AddColorForm />
 
       <CounterRefState />
-      <PreferencesForm />
+      <PreferencesForm /> */}
+
+      <Form />
     </>
   );
 }
