@@ -18,6 +18,7 @@ import AddColorForm from "./components/AddColorForm";
 import CounterRefState from "./components/CounterRefState";
 import PreferencesForm from "./components/RefsInCustomCompo/PreferencesForm";
 import Form from "./components/07Practice/Form";
+import MainNavigation from "./components/07Practice02/MainNavigation";
 
 function App() {
   const [outputText, setCount] = useState("Initial Text");
@@ -55,7 +56,9 @@ function App() {
       <CounterRefState />
       <PreferencesForm /> */}
 
-      <Form />
+      {/* <Form /> */}
+
+      <MainNavigation />
     </>
   );
 }
